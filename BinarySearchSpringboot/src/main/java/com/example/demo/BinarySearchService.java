@@ -12,7 +12,7 @@ public class BinarySearchService {
         HashMap<Integer,Integer>indexMapping = new HashMap<>();
 
         for(int i = 0; i < nums.length; i++){
-            map.put(nums[i], i);
+            indexMapping.put(nums[i], i);
         }
 
         Arrays.sort(nums);
