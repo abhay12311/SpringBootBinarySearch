@@ -19,7 +19,7 @@ Before running this project, ensure you have:
 ## Installation
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/BinarySearchSpringboot.git
+    git clone https://github.com/abhay12311/BinarySearchSpringboot.git
     ```
 2. **Navigate to the project directory**:
     ```bash
@@ -73,11 +73,5 @@ BinarySearchSpringboot/
 ```
 
 ## Example
-![Example Usage](IMG/example.png)
-
-## License
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-For any inquiries, reach out at **[your-email@example.com]**.
+![Example Usage](imgs/example.png)
 
