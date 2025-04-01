@@ -7,21 +7,21 @@ import java.util.*;
 @Service
 public class BinarySearchService {
 
-    public int binarySearch(int[] Array, int target) {
+    public int binarySearch(int[] nums, int target) {
         
-        HashMap<Integer,Integer>map=new HashMap<>();
+        HashMap<Integer,Integer>indexMapping = new HashMap<>();
 
-        for(int i=0;i<Array.length;i++){
-            map.put(Array[i], i);
+        for(int i = 0; i < nums.length; i++){
+            map.put(nums[i], i);
         }
 
-        Arrays.sort(Array);
+        Arrays.sort(nums);
 
-        int left = 0, right = Array.length - 1;
+        int left = 0, right = nums.length - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            if (Array[mid] == target) return map.get(Array[mid]);
-            if (Array[mid] < target) {
+            if (nums[mid] == target) return indexMapping.get(nums[mid]);
+            if (nums[mid] < target) {
                 left = mid + 1;
             } else {
                 right = mid - 1;
